@@ -97,7 +97,7 @@ router.get("/cart/getcartitems", async (req,res)=>{
     }
 })
 
-router.post("/cart/addtocart", verifyJwt, async (req, res) => {
+router.post("/cart/addtocart", async (req, res) => {
     try {
         const { userId, productId } = req.body;
 
